@@ -97,3 +97,202 @@ rviceLoader.java:188)
 2014-7-10 18:36:11 org.apache.catalina.core.StandardContext startInternal
 严重: Context [/controller/nb/cluster] startup failed due to previous errors
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================================
+D:\work\felix-framework-4.2.1>java -Dlogback.configurationFile=logback.xml -Dlog
+4j.configuration=file:log4j.properties  -jar bin/felix.jar
+Auto-properties start: file:thirdpart/dep/org.apache.catalina.ha-7.0.53.v2014060
+70630.jar (org.osgi.framework.BundleException: Fragment bundles can not be start
+ed.)
+Auto-properties start: file:thirdpart/dep/org.apache.catalina.tribes-7.0.53.v201
+406070630.jar (org.osgi.framework.BundleException: Fragment bundles can not be s
+tarted.)
+Auto-properties start: file:thirdpart/dep/org.apache.coyote-7.0.53.v201406070630
+.jar (org.osgi.framework.BundleException: Fragment bundles can not be started.)
+Auto-properties start: file:thirdpart/dep/org.apache.jasper-7.0.53.v201406070630
+.jar (org.osgi.framework.BundleException: Fragment bundles can not be started.)
+Auto-properties start: file:thirdpart/dep/org.apache.tomcat.util-7.0.53.v2014060
+70630.jar (org.osgi.framework.BundleException: Fragment bundles can not be start
+ed.)
+Auto-properties start: file:thirdpart/dep/org.apache.tomcat.websocket-7.0.53.v20
+1406070630.jar (org.osgi.framework.BundleException: Fragment bundles can not be
+started.)
+____________________________
+Welcome to Apache Felix Gogo
+
+g! 2014-7-11 16:34:39 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performanc
+e in production environments was not found on the java.library.path: C:\Windows\
+system32;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\sys
+tem32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\
+v1.0\;C:\Program Files\SinoVoice\jTTS 5.0 Desktop\Bin;C:\Program Files\Citrix\Sy
+stem32\;C:\Program Files\Citrix\ICAService\;C:\PROGRA~1\ULTRAE~1;C:\Program File
+s\TortoiseGit\bin;C:\Python27;C:\Program Files\TortoiseSVN\bin;D:\soft\apache-ma
+ven-3.1.0\bin;D:\soft\apache-maven-3.1.0\bin
+2014-7-11 16:34:39 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+2014-7-11 16:34:39 org.apache.catalina.mbeans.GlobalResourcesLifecycleListener c
+reateMBeans
+严重: No global naming context defined for server
+2014-7-11 16:34:39 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+2014-7-11 16:34:39 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.53
+2014-7-11 16:34:39 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+GossipRouter started at Fri Jul 11 16:34:42 GMT+08:00 2014
+Listening on port 12001 bound on address 0.0.0.0/0.0.0.0
+Backlog is 1000, linger timeout is 2000, and read timeout is 0
+2014-7-11 16:34:54 org.glassfish.jersey.server.ApplicationHandler initialize
+信息: Initiating Jersey application, version Jersey: 2.4 2013-10-24 18:25:49...
+2014-7-11 16:34:55 org.apache.catalina.core.ContainerBase addChildInternal
+严重: ContainerBase.addChild: start:
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngin
+e[Catalina].StandardHost[localhost].StandardContext[/controller/nb/cluster]]
+        at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+        at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase
+.java:901)
+        at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:87
+7)
+        at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+
+        at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.startWe
+bApplication(TomcatServletContainer.java:125)
+        at org.eclipse.gemini.web.internal.StandardWebApplication.start(Standard
+WebApplication.java:109)
+        at org.eclipse.gemini.web.extender.WebContainerBundleCustomizer.addingBu
+ndle(WebContainerBundleCustomizer.java:49)
+        at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTr
+acker.java:467)
+        at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTr
+acker.java:414)
+        at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.jav
+a:256)
+        at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+
+        at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTrack
+er.java:443)
+        at org.apache.felix.framework.util.EventDispatcher.invokeBundleListenerC
+allback(EventDispatcher.java:868)
+        at org.apache.felix.framework.util.EventDispatcher.fireEventImmediately(
+EventDispatcher.java:789)
+        at org.apache.felix.framework.util.EventDispatcher.fireBundleEvent(Event
+Dispatcher.java:514)
+        at org.apache.felix.framework.Felix.fireBundleEvent(Felix.java:4403)
+        at org.apache.felix.framework.Felix.startBundle(Felix.java:2092)
+        at org.apache.felix.framework.Felix.setActiveStartLevel(Felix.java:1291)
+
+        at org.apache.felix.framework.FrameworkStartLevelImpl.run(FrameworkStart
+LevelImpl.java:304)
+        at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.UnsupportedClassVersionError: javax/servlet/ServletContaine
+rInitializer : Unsupported major.minor version 51.0
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClassCond(Unknown Source)
+        at java.lang.ClassLoader.defineClass(Unknown Source)
+        at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.findCla
+ss(BundleWiringImpl.java:2279)
+        at org.apache.felix.framework.BundleWiringImpl.findClassOrResourceByDele
+gation(BundleWiringImpl.java:1501)
+        at org.apache.felix.framework.BundleWiringImpl.access$400(BundleWiringIm
+pl.java:75)
+        at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.loadCla
+ss(BundleWiringImpl.java:1955)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClassCond(Unknown Source)
+        at java.lang.ClassLoader.defineClass(Unknown Source)
+        at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.findCla
+ss(BundleWiringImpl.java:2279)
+        at org.apache.felix.framework.BundleWiringImpl.findClassOrResourceByDele
+gation(BundleWiringImpl.java:1501)
+        at org.apache.felix.framework.BundleWiringImpl.access$400(BundleWiringIm
+pl.java:75)
+        at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.loadCla
+ss(BundleWiringImpl.java:1955)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at org.apache.felix.framework.BundleWiringImpl.getClassByDelegation(Bund
+leWiringImpl.java:1374)
+        at org.apache.felix.framework.BundleWiringImpl.searchImports(BundleWirin
+gImpl.java:1553)
+        at org.apache.felix.framework.BundleWiringImpl.findClassOrResourceByDele
+gation(BundleWiringImpl.java:1484)
+        at org.apache.felix.framework.BundleWiringImpl.access$400(BundleWiringIm
+pl.java:75)
+        at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.loadCla
+ss(BundleWiringImpl.java:1955)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at org.apache.felix.framework.Felix.loadBundleClass(Felix.java:1844)
+        at org.apache.felix.framework.BundleImpl.loadClass(BundleImpl.java:937)
+        at org.eclipse.gemini.web.tomcat.internal.loading.BundleDelegatingClassL
+oader.findClass(BundleDelegatingClassLoader.java:91)
+        at org.eclipse.gemini.web.tomcat.internal.loading.BundleDelegatingClassL
+oader.loadClass(BundleDelegatingClassLoader.java:139)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at org.eclipse.gemini.web.tomcat.internal.loading.ChainedClassLoader.doL
+oadClass(ChainedClassLoader.java:174)
+        at org.eclipse.gemini.web.tomcat.internal.loading.ChainedClassLoader.loa
+dClass(ChainedClassLoader.java:164)
+        at org.eclipse.gemini.web.tomcat.internal.loading.BundleWebappClassLoade
+r.loadClass(BundleWebappClassLoader.java:298)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at java.lang.Class.forName0(Native Method)
+        at java.lang.Class.forName(Unknown Source)
+        at org.apache.catalina.startup.WebappServiceLoader.loadServices(WebappSe
+rviceLoader.java:187)
+        at org.apache.catalina.startup.WebappServiceLoader.load(WebappServiceLoa
+der.java:152)
+        at org.apache.catalina.startup.ContextConfig.processServletContainerInit
+ializers(ContextConfig.java:1543)
+        at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.jav
+a:1265)
+        at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfi
+g.java:873)
+        at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfi
+g.java:371)
+        at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(Lifecycl
+eSupport.java:117)
+        at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBa
+se.java:90)
+        at org.apache.catalina.core.StandardContext.startInternal(StandardContex
+t.java:5355)
+        at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+        ... 19 more
+
+g! lb
