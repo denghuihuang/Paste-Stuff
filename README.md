@@ -296,3 +296,155 @@ t.java:5355)
         ... 19 more
 
 g! lb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================================================================================
+
+
+
+
+D:\work\felix-framework-4.2.1>java -Dlogback.configurationFile=logback.xml -Dlog
+4j.configuration=file:log4j.properties -jar bin/felix.jar
+Auto-properties start: file:thirdpart/dep/org.apache.catalina.ha-7.0.53.v2014060
+70630.jar (org.osgi.framework.BundleException: Fragment bundles can not be start
+ed.)
+Auto-properties start: file:thirdpart/dep/org.apache.catalina.tribes-7.0.53.v201
+406070630.jar (org.osgi.framework.BundleException: Fragment bundles can not be s
+tarted.)
+Auto-properties start: file:thirdpart/dep/org.apache.coyote-7.0.53.v201406070630
+.jar (org.osgi.framework.BundleException: Fragment bundles can not be started.)
+Auto-properties start: file:thirdpart/dep/org.apache.jasper-7.0.53.v201406070630
+.jar (org.osgi.framework.BundleException: Fragment bundles can not be started.)
+Auto-properties start: file:thirdpart/dep/org.apache.tomcat.util-7.0.53.v2014060
+70630.jar (org.osgi.framework.BundleException: Fragment bundles can not be start
+ed.)
+Auto-properties start: file:thirdpart/dep/org.apache.tomcat.websocket-7.0.53.v20
+1406070630.jar (org.osgi.framework.BundleException: Fragment bundles can not be
+started.)
+____________________________
+Welcome to Apache Felix Gogo
+
+g! 七月 14, 2014 5:24:48 下午 org.apache.catalina.core.AprLifecycleListener init
+
+INFO: The APR based Apache Tomcat Native library which allows optimal performanc
+e in production environments was not found on the java.library.path: C:\Windows\
+system32;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\syste
+m32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1
+.0\;C:\Program Files\SinoVoice\jTTS 5.0 Desktop\Bin;C:\Program Files\Citrix\Syst
+em32\;C:\Program Files\Citrix\ICAService\;C:\PROGRA~1\ULTRAE~1;C:\Program Files\
+TortoiseGit\bin;C:\Python27;C:\Program Files\TortoiseSVN\bin;D:\soft\apache-mave
+n-3.1.0\bin;D:\soft\apache-maven-3.1.0\bin;.
+七月 14, 2014 5:24:48 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+七月 14, 2014 5:24:48 下午 org.apache.catalina.mbeans.GlobalResourcesLifecycleLi
+stener createMBeans
+SEVERE: No global naming context defined for server
+七月 14, 2014 5:24:48 下午 org.apache.catalina.core.StandardService startInterna
+l
+INFO: Starting service Catalina
+七月 14, 2014 5:24:48 下午 org.apache.catalina.core.StandardEngine startInternal
+
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.53
+七月 14, 2014 5:24:48 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+GossipRouter started at Mon Jul 14 17:24:51 GMT+08:00 2014
+Listening on port 12001 bound on address 0.0.0.0/0.0.0.0
+Backlog is 1000, linger timeout is 2000, and read timeout is 0
+七月 14, 2014 5:25:04 下午 org.glassfish.jersey.server.ApplicationHandler initia
+lize
+INFO: Initiating Jersey application, version Jersey: 2.4 2013-10-24 18:25:49...
+七月 14, 2014 5:25:04 下午 org.apache.catalina.startup.ContextConfig processServ
+letContainerInitializers
+SEVERE: Failed to process JAR found at URL [/controller/nb/cluster] for ServletC
+ontainerInitializers for context with name [{1}]
+java.io.IOException: java.lang.ClassCastException: Cannot cast com.huawei.sdnc.n
+orthbound.customservletcontainerinit.BundleServletContainerInitializer to javax.
+servlet.ServletContainerInitializer
+        at org.apache.catalina.startup.WebappServiceLoader.loadServices(WebappSe
+rviceLoader.java:196)
+        at org.apache.catalina.startup.WebappServiceLoader.load(WebappServiceLoa
+der.java:152)
+        at org.apache.catalina.startup.ContextConfig.processServletContainerInit
+ializers(ContextConfig.java:1543)
+        at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.jav
+a:1265)
+        at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfi
+g.java:873)
+        at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfi
+g.java:371)
+        at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(Lifecycl
+eSupport.java:117)
+        at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBa
+se.java:90)
+        at org.apache.catalina.core.StandardContext.startInternal(StandardContex
+t.java:5355)
+        at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+        at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase
+.java:901)
+        at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:87
+7)
+        at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+
+        at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.startWe
+bApplication(TomcatServletContainer.java:125)
+        at org.eclipse.gemini.web.internal.StandardWebApplication.start(Standard
+WebApplication.java:109)
+        at org.eclipse.gemini.web.extender.WebContainerBundleCustomizer.addingBu
+ndle(WebContainerBundleCustomizer.java:49)
+        at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTr
+acker.java:467)
+        at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTr
+acker.java:414)
+        at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.jav
+a:256)
+        at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+
+        at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTrack
+er.java:443)
+        at org.apache.felix.framework.util.EventDispatcher.invokeBundleListenerC
+allback(EventDispatcher.java:868)
+        at org.apache.felix.framework.util.EventDispatcher.fireEventImmediately(
+EventDispatcher.java:789)
+        at org.apache.felix.framework.util.EventDispatcher.fireBundleEvent(Event
+Dispatcher.java:514)
+        at org.apache.felix.framework.Felix.fireBundleEvent(Felix.java:4403)
+        at org.apache.felix.framework.Felix.startBundle(Felix.java:2092)
+        at org.apache.felix.framework.Felix.setActiveStartLevel(Felix.java:1291)
+
+        at org.apache.felix.framework.FrameworkStartLevelImpl.run(FrameworkStart
+LevelImpl.java:304)
+        at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassCastException: Cannot cast com.huawei.sdnc.northbound.
+customservletcontainerinit.BundleServletContainerInitializer to javax.servlet.Se
+rvletContainerInitializer
+        at java.lang.Class.cast(Unknown Source)
+        at org.apache.catalina.startup.WebappServiceLoader.loadServices(WebappSe
+rviceLoader.java:188)
+        ... 28 more
+
+七月 14, 2014 5:25:04 下午 org.apache.catalina.startup.ContextConfig configureSt
+art
+SEVERE: Marking this application unavailable due to previous error(s)
+七月 14, 2014 5:25:04 下午 org.apache.catalina.core.StandardContext startInterna
+l
+SEVERE: Error getConfigured
+七月 14, 2014 5:25:04 下午 org.apache.catalina.core.StandardContext startInterna
+l
+SEVERE: Context [/controller/nb/cluster] startup failed due to previous errors
