@@ -448,3 +448,129 @@ SEVERE: Error getConfigured
 七月 14, 2014 5:25:04 下午 org.apache.catalina.core.StandardContext startInterna
 l
 SEVERE: Context [/controller/nb/cluster] startup failed due to previous errors
+
+
+
+====================================================================================
+
+
+
+D:\work\felix-framework-4.2.1-b>java -Dlogback.configurationFile=logback.xml -Dl
+og4j.configuration=file:log4j.properties -jar bin/felix.jar
+____________________________
+Welcome to Apache Felix Gogo
+
+g! 七月 22, 2014 3:35:37 下午 org.apache.catalina.core.AprLifecycleListener init
+
+INFO: The APR based Apache Tomcat Native library which allows optimal performanc
+e in production environments was not found on the java.library.path: C:\Windows\
+system32;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files
+\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;
+C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\SinoVoice\jTTS 5.0
+Desktop\Bin;C:\Program Files\Citrix\System32\;C:\Program Files\Citrix\ICAService
+\;C:\PROGRA~1\ULTRAE~1;C:\Program Files\TortoiseGit\bin;C:\Python27;C:\Program F
+iles\TortoiseSVN\bin;D:\soft\apache-maven-3.1.0\bin;D:\soft\apache-maven-3.1.0\b
+in;.
+七月 22, 2014 3:35:38 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+七月 22, 2014 3:35:38 下午 org.apache.catalina.mbeans.GlobalResourcesLifecycleLi
+stener createMBeans
+SEVERE: No global naming context defined for server
+七月 22, 2014 3:35:38 下午 org.apache.catalina.core.StandardService startInterna
+l
+INFO: Starting service Catalina
+七月 22, 2014 3:35:38 下午 org.apache.catalina.core.StandardEngine startInternal
+
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.53
+七月 22, 2014 3:35:38 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+七月 22, 2014 3:35:41 下午 org.apache.catalina.core.ApplicationContext log
+INFO: Marking servlet JAXRSCluster as unavailable
+七月 22, 2014 3:35:41 下午 org.apache.catalina.core.StandardContext loadOnStartu
+p
+SEVERE: Servlet /controller/nb/cluster threw load() exception
+java.lang.ClassNotFoundException: javax.servlet.Filter not found by cluster.nort
+hbound [41]
+        at org.apache.felix.framework.BundleWiringImpl.findClassOrResourceByDele
+gation(BundleWiringImpl.java:1532)
+        at org.apache.felix.framework.BundleWiringImpl.access$400(BundleWiringIm
+pl.java:75)
+        at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.loadCla
+ss(BundleWiringImpl.java:1955)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClass(Unknown Source)
+        at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.findCla
+ss(BundleWiringImpl.java:2279)
+        at org.apache.felix.framework.BundleWiringImpl.findClassOrResourceByDele
+gation(BundleWiringImpl.java:1501)
+        at org.apache.felix.framework.BundleWiringImpl.access$400(BundleWiringIm
+pl.java:75)
+        at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.loadCla
+ss(BundleWiringImpl.java:1955)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at org.apache.felix.framework.Felix.loadBundleClass(Felix.java:1844)
+        at org.apache.felix.framework.BundleImpl.loadClass(BundleImpl.java:937)
+        at org.eclipse.gemini.web.tomcat.internal.loading.BundleDelegatingClassL
+oader.findClass(BundleDelegatingClassLoader.java:91)
+        at org.eclipse.gemini.web.tomcat.internal.loading.BundleDelegatingClassL
+oader.loadClass(BundleDelegatingClassLoader.java:139)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at org.eclipse.gemini.web.tomcat.internal.loading.ChainedClassLoader.doL
+oadClass(ChainedClassLoader.java:174)
+        at org.eclipse.gemini.web.tomcat.internal.loading.ChainedClassLoader.loa
+dClass(ChainedClassLoader.java:164)
+        at org.eclipse.gemini.web.tomcat.internal.loading.BundleWebappClassLoade
+r.loadClass(BundleWebappClassLoader.java:298)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at org.apache.catalina.core.DefaultInstanceManager.loadClass(DefaultInst
+anceManager.java:529)
+        at org.apache.catalina.core.DefaultInstanceManager.loadClassMaybePrivile
+ged(DefaultInstanceManager.java:511)
+        at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultIn
+stanceManager.java:139)
+        at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.
+java:1148)
+        at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:10
+87)
+        at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContex
+t.java:5210)
+        at org.apache.catalina.core.StandardContext.startInternal(StandardContex
+t.java:5493)
+        at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+        at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase
+.java:901)
+        at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:87
+7)
+        at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+
+        at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.startWe
+bApplication(TomcatServletContainer.java:125)
+        at org.eclipse.gemini.web.internal.StandardWebApplication.start(Standard
+WebApplication.java:109)
+        at org.eclipse.gemini.web.extender.WebContainerBundleCustomizer.addingBu
+ndle(WebContainerBundleCustomizer.java:49)
+        at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTr
+acker.java:467)
+        at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTr
+acker.java:414)
+        at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.jav
+a:256)
+        at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+
+        at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTrack
+er.java:443)
+        at org.apache.felix.framework.util.EventDispatcher.invokeBundleListenerC
+allback(EventDispatcher.java:868)
+        at org.apache.felix.framework.util.EventDispatcher.fireEventImmediately(
+EventDispatcher.java:789)
+        at org.apache.felix.framework.util.EventDispatcher.fireBundleEvent(Event
+Dispatcher.java:514)
+        at org.apache.felix.framework.Felix.fireBundleEvent(Felix.java:4403)
+        at org.apache.felix.framework.Felix.startBundle(Felix.java:2092)
+        at org.apache.felix.framework.Felix.setActiveStartLevel(Felix.java:1291)
+
+        at org.apache.felix.framework.FrameworkStartLevelImpl.run(FrameworkStart
+LevelImpl.java:304)
+        at java.lang.Thread.run(Unknown Source)
+
