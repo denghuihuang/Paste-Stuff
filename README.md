@@ -10,3 +10,6 @@ http://pan.baidu.com/wap/link?uk=2214641459&shareid=1974442370&third=0
 
 
 http://pan.baidu.com/s/1o6uozv8
+
+
+https://repos.fedorapeople.org/repos/openstack/openstack-kilo/el7
