@@ -13,3 +13,5 @@ http://pan.baidu.com/s/1o6uozv8
 
 
 https://repos.fedorapeople.org/repos/openstack/openstack-kilo/el7
+
+https://azure.microsoft.com/en-us/blog/microsoft-showcases-software-defined-networking-innovation-at-sigcomm-v2/
