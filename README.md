@@ -15,3 +15,6 @@ http://pan.baidu.com/s/1o6uozv8
 https://repos.fedorapeople.org/repos/openstack/openstack-kilo/el7
 
 https://azure.microsoft.com/en-us/blog/microsoft-showcases-software-defined-networking-innovation-at-sigcomm-v2/
+
+
+http://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/setup-linux-container-with-lxc-on-ubuntu-16-04-14-04.html
