@@ -20,3 +20,5 @@ https://azure.microsoft.com/en-us/blog/microsoft-showcases-software-defined-netw
 http://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/setup-linux-container-with-lxc-on-ubuntu-16-04-14-04.html
 
 http://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/manage-lxc-container-with-lxc-web-panel-a-web-based-interface.html
+
+https://github.com/openstack/docs-specs/blob/master/specs/template.rst
