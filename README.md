@@ -28,3 +28,6 @@ https://github.com/openstack/docs-specs/blob/master/specs/template.rst
  cookie=0x0, duration=19497.421s, table=0, n_packets=43, n_bytes=3446, idle_age=16634, priority=0 actions=NORMAL
  
  group_id=1,type=select,bucket=weight:100,actions=ct(commit,table=1,zone=1,nat(dst=192.168.1.2:8080)),bucket=weight:200,actions=ct(commit,table=1,zone=2,nat(dst=192.168.1.3:8090)),bucket=weight:300,actions=ct(commit,table=1,zone=3,nat(dst=192.168.1.4:9000))
+
+
+http://linuxgazette.net/135/pfeiffer.html
