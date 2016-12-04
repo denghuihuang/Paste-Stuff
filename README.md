@@ -39,4 +39,9 @@ http://linuxgazette.net/135/pfeiffer.html
  cookie=0x0, duration=1661.920s, table=0, n_packets=170, n_bytes=7140, idle_age=5, priority=0,arp actions=NORMAL
  cookie=0x0, duration=1396.845s, table=1, n_packets=1338, n_bytes=265628, idle_age=20, priority=100,ct_state=+trk,ip,in_port=1 actions=ct(commit,nat(src=192.168.1.4)),output:2
  cookie=0x0, duration=1109.393s, table=1, n_packets=1057, n_bytes=238090, idle_age=20, priority=100,ct_state=+est,ip,in_port=2 actions=output:1
+ 
+ 
+ https://etherpad.openstack.org/p/newton-ovo-progress
+ 
+ http://openstack.10931.n7.nabble.com/neutron-OVO-Status-Dashboard-td116778.html
 
