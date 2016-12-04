@@ -31,3 +31,12 @@ https://github.com/openstack/docs-specs/blob/master/specs/template.rst
 
 
 http://linuxgazette.net/135/pfeiffer.html
+
+
+
+ cookie=0x0, duration=1692.078s, table=0, n_packets=1566, n_bytes=287972, idle_age=20, priority=100,ip,in_port=1 actions=ct(table=1,nat)
+ cookie=0x0, duration=1235.270s, table=0, n_packets=1266, n_bytes=258572, idle_age=1, priority=100,ip,in_port=2 actions=ct(table=1,nat)
+ cookie=0x0, duration=1661.920s, table=0, n_packets=170, n_bytes=7140, idle_age=5, priority=0,arp actions=NORMAL
+ cookie=0x0, duration=1396.845s, table=1, n_packets=1338, n_bytes=265628, idle_age=20, priority=100,ct_state=+trk,ip,in_port=1 actions=ct(commit,nat(src=192.168.1.4)),output:2
+ cookie=0x0, duration=1109.393s, table=1, n_packets=1057, n_bytes=238090, idle_age=20, priority=100,ct_state=+est,ip,in_port=2 actions=output:1
+
