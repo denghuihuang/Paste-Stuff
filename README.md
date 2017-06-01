@@ -44,4 +44,8 @@ http://linuxgazette.net/135/pfeiffer.html
  https://etherpad.openstack.org/p/newton-ovo-progress
  
  http://openstack.10931.n7.nabble.com/neutron-OVO-Status-Dashboard-td116778.html
+ 
+ 
+ tc qdisc add dev qvm97f9565d-4c ingress
+tc filter add dev qvm97f9565d-4c protocol ip parent ffff: prio 1 u32 match ip src 192.168.1.2 match ether src e4:11:22:33:44:50 flowid 1:16 action drop
 
