@@ -52,3 +52,7 @@ tc filter add dev qvm97f9565d-4c protocol ip parent ffff: prio 1 u32 match ip sr
 ftp://ftp.registro.br/pub/gter/gter41/05-OpenContrail-Suporte-Legado.pdf
 
 https://yq.aliyun.com/articles/218895
+
+
+nginx分析：
+https://github.com/vislee/leevis.com/issues/137
