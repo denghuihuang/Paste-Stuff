@@ -56,3 +56,5 @@ https://yq.aliyun.com/articles/218895
 
 nginx分析：
 https://github.com/vislee/leevis.com/issues/137
+
+https://www.codingnow.com/temp/readinglua.pdf
