@@ -58,3 +58,19 @@ nginx分析：
 https://github.com/vislee/leevis.com/issues/137
 
 https://www.codingnow.com/temp/readinglua.pdf
+
+
+http://cxd2014.github.io/2017/10/15/linux-napi/
+
+https://blog.csdn.net/hz5034/article/details/79794478
+
+https://www.cnblogs.com/mylinuxer/p/4272382.html
+
+https://www.ibm.com/developerworks/cn/linux/l-napi/
+
+https://vincent.bernat.im/en/blog/2017-vxlan-linux
+
+
+https://www.cnblogs.com/mylinuxer/p/4272382.html
+
+https://courses.engr.illinois.edu/cs423/sp2014/Lectures/LinuxDriver.pdf
