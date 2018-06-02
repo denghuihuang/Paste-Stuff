@@ -77,3 +77,5 @@ https://courses.engr.illinois.edu/cs423/sp2014/Lectures/LinuxDriver.pdf
 
 
 https://www.central.org/dl/linuxdev/centos6/i386/
+
+http://rpm.pbone.net/index.php3/stat/3/srodzaj/2/search/kernel-2.6.32-431.17.1.el6.src.rpm
