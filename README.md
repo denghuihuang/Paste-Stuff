@@ -86,3 +86,55 @@ https://blog.packagecloud.io/eng/2016/06/22/monitoring-tuning-linux-networking-s
 https://blog.csdn.net/zm_21/article/details/27208811
 
 https://pan.baidu.com/s/13x-AeF6oiFZh1aCg7NT5aw 
+
+
+
+
+
+
+set nocompatible " be iMproved, required
+filetype off " required
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'jiangmiao/auto-pairs'
+
+let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"'}
+
+
+set autoindent
+set cindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
+set smarttab
+set number
+syntax on
+
+""inoremap ' ''<ESC>i
+""inoremap " ""<ESC>i
+""inoremap ( ()<ESC>i
+""inoremap [ []<ESC>i
+""inoremap { {<CR>}<ESC>O
+
+
+
+set cscopequickfix=s-,c-,d-,i-,t-,e-
+if has("cscope")
+set csprg=/usr/bin/cscope
+set csto=1
+set cst
+set nocsverb
+" add any database in current directory
+if filereadable("cscope.out")
+cs add cscope.out
+nmap <S-s> <Esc>:cs find s <cword> <Enter>
+nmap <S-c> <Esc>:cs find c <cword> <Enter>
+endif
+set csverb
+endif
