@@ -1,5 +1,7 @@
 Paste-Stuff
 ===========
+https://vdoc.pub/download/pronunciation-pairs-students-book-with-audio-cd-2h3hpvu31070
+
 
 Let's see what is redhat's buglist looks like?
 
